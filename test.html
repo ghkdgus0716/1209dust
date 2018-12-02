@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:650px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="BlueDot.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">칼 세이건은 보이저 계획의 화상 팀을 맡았고</br> 이 사진도 칼 세이건의 주도로 촬영된 것이었다.</br> 세이건은 자신의 저서에서,</br> "지구는 광활한 우주에 떠 있는 보잘것없는 존재에</br> 불과함을 사람들에게 가르쳐 주고 싶었다" 라고 밝혔다. 
+</div>
+  </div>
+</div>
+
+</body>
+</html>
